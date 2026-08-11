@@ -1,0 +1,31 @@
+n1 = 20
+n2 = 25
+n3 = 30
+n4 = 15
+n5 = 35
+
+total = n1 + n2 + n3 + n4 + n5
+average = total / 5
+
+stars_per_point = 2
+reward_stars = total * stars_per_point
+
+boxes = reward_stars // 25
+leftover = reward_stars % 25
+
+last_week = 100
+
+print("Total points:", total)
+print("Average points:", average)
+print("Total reward stars:", reward_stars)
+print("Full boxes:", boxes)
+print("Stars left over:", leftover)
+print("This week's total is greater than last week's:", total > last_week)
+print("This week's total is equal to last week's:", total == last_week)
+print("This week's total is greater than or equal to last week's:", total >= last_week)
+
+total += 10
+print("After adding bonus points:", total)
+
+total -= 5
+print("After subtracting missed-task points:", total)
