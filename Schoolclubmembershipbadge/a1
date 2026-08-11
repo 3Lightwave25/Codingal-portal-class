@@ -1,0 +1,31 @@
+n1 = input("Enter member name: ")
+n2 = input("Enter school club name: ")
+
+n3 = 101
+points = 85.5
+events = 6
+hours = 12.5
+active = True
+
+print(n3, type(n3))
+print(points, type(points))
+print(events, type(events))
+print(hours, type(hours))
+print(active, type(active))
+
+n3 = str(n3)
+points = str(points)
+events = str(events)
+active = str(active)
+
+badge = n1[0:3] + n1[-1:]
+secret = n2[::-1]
+
+print("Member Name: " + n1)
+print("Club Name: " + n2)
+print("Member Number: " + n3)
+print("Points: " + points)
+print("Events: " + events)
+print("Active: " + active)
+print("Badge Code: " + badge)
+print("Secret Club Code: " + secret)
