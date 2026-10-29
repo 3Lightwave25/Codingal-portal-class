@@ -4,11 +4,11 @@ print("Original List:", L)
 count = 0
 
 for i in L:
-    count += 1
+    count += i 
 
 avg = count/len(L)
 
-print("sum =", count)
+print("sum = ", count)
 print("average = ", avg)
 
 L.sort()
