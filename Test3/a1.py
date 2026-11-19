@@ -18,7 +18,7 @@ total = 0
 for score in students.values():
     total = total + score
 
-average = total / 4
+average = total / 5
 
 print("Class average:", average)
 
@@ -28,11 +28,9 @@ lowest = min(students, key=students.get)
 print("Top scorer:", highest, students[highest])
 print("Lowest scorer:", lowest, students[lowest])
 
-search = input("Enter student name: ")
+n6 = input("Enter student name: ")
 
-grade = students.get(search)
-
-if grade is not None:
-    print("Student score:", grade)
+if n6 in students:
+    print("Student score:", students[n6])
 else:
     print("Student not found")
